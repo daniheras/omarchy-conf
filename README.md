@@ -23,6 +23,23 @@ herdr/         # Herdr terminal multiplexer config
 - `herdr/config.toml` — `vesper` base restyled to the same Nothing palette
   (graphite surfaces, `#D71921` accent), tmux-style keybindings.
 
+## Submodules
+
+- **nothing-dark-configs** — the Nothing-themed OpenCode/Herdr presentation
+  repo (custom `nothing-dark` OpenCode theme, framed README screenshots).
+  Pinned to the validated commit; bump with:
+
+  ```sh
+  git submodule update --remote nothing-dark-configs
+  git add nothing-dark-configs && git commit -m "bump nothing-dark-configs"
+  ```
+
+  Clone this repo on another machine with:
+
+  ```sh
+  git clone --recurse-submodules https://github.com/daniheras/omarchy-conf
+  ```
+
 ## Symlink install (live-edit in the repo)
 
 ```sh

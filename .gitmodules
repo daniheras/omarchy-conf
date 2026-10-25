@@ -1,0 +1,3 @@
+[submodule "nothing-dark-configs"]
+	path = nothing-dark-configs
+	url = https://github.com/daniheras/nothing-dark-configs.git
