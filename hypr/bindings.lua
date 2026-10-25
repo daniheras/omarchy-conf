@@ -32,3 +32,5 @@ o.bind("SUPER + SHIFT + S", "Screenshot", "omarchy screenshot")
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
 -- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
+
+-- auto-sync test marker
