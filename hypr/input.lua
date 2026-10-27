@@ -44,11 +44,12 @@
 --   },
 -- })
 
--- Scroll natural (invertido) en el touchpad + sensibilidad baja del mouse.
+-- Scroll natural (invertido) en el touchpad. Sensibilidad del mouse en 0
+-- (neutro); súbelo hacia 0.35 o bájalo hacia -1 si necesitas otro punto.
 hl.config({
   input = {
-    -- Lower mouse/trackpad sensitivity (default: 0, range: -1..1).
-    sensitivity = -0.7,
+    -- Mouse/trackpad sensitivity (default: 0, range: -1..1).
+    sensitivity = 0,
 
     touchpad = {
       natural_scroll = true,
