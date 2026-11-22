@@ -35,5 +35,13 @@ o.window(
   { float = true, pin = true, center = true }
 )
 
+-- Agent evidence runs (spikes / measurement loops): their throwaway windows
+-- land in a hidden special workspace so iterate-and-measure loops never flash
+-- on the owner's desktop (same intent as the capture harness's runtime dispatch).
+o.window(
+  { class = "^DepthOutlines$" },
+  { workspace = "special:vesta-evidence silent" }
+)
+
 -- Added by hyprmoncfg: its generated monitor rules load last, so nothing before this can override the applied layout.
 do local path = os.getenv("HOME") .. "/.config/hypr/hyprmoncfg-monitors.lua"; local file = io.open(path, "r"); if file then file:close(); dofile(path) end end
