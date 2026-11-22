@@ -28,5 +28,12 @@ require("default.hypr.toggles")
 -- Add any other personal Hyprland configuration below.
 -- o.window("qemu", { workspace = "5" })
 
+-- capture-viewer (~/.local/bin/capture-viewer): agent-made captures shown to
+-- the owner for review; float + pin + center so it pops over any workspace.
+o.window(
+  { class = "^capture-viewer$" },
+  { float = true, pin = true, center = true }
+)
+
 -- Added by hyprmoncfg: its generated monitor rules load last, so nothing before this can override the applied layout.
 do local path = os.getenv("HOME") .. "/.config/hypr/hyprmoncfg-monitors.lua"; local file = io.open(path, "r"); if file then file:close(); dofile(path) end end
